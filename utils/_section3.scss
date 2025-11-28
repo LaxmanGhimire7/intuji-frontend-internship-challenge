@@ -1,0 +1,134 @@
+
+@use "./navbar" as navbar;
+
+
+.portfolio-section {
+  background: #f8fafc;
+  padding: 80px 0;
+
+  .portfolio-wrapper {
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .left-content {
+      h1 {
+        font-size: 48px;
+        font-weight: 700;
+        color: #0f172a;
+        line-height: 1.1;
+        margin-bottom: 15px;
+      }
+
+      p {
+        font-size: 16px;
+        color: #475569;
+        line-height: 1.6;
+      }
+    }
+
+    .testimonial-box {
+      background: white;
+      padding: 25px 35px;
+      border-radius: 12px;
+      width: 380px;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+      background-color: #e8e4e4;
+      position: relative;
+img{
+    height: 40px;
+    position: absolute;
+    top: -20px;
+}
+
+      .quote {
+        font-size: 14px;
+        color: #334155;
+        line-height: 1.6;
+        margin-bottom: 10px;
+      }
+
+      .author {
+        font-size: 14px;
+        font-weight: 500;
+        color: #000;
+      }
+    }
+  }
+
+
+  .steps-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+
+    .step-card {
+      flex: 1;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 40px 30px;
+      text-align: center;
+
+      .step-number {
+        font-size: 16px;
+        font-weight: 700;
+        color: #0f172a;
+        display: block;
+        text-align: left;
+      }
+
+      .icon-box {
+        margin: 40px auto 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+
+        .black-bar {
+          width: 30px;
+          height: 8px;
+          background: black;
+          border-radius: 4px;
+        }
+
+        .color-box {
+          width: 50px;
+          height: 25px;
+          border-radius: 4px;
+
+          &.blue {
+            background: #3b82f6;
+          }
+          &.orange {
+            background: #fb923c;
+          }
+          &.yellow {
+            background: #facc15;
+          }
+        }
+      }
+
+      h3 {
+        font-size: 20px;
+        font-weight: 700;
+        color: #0f172a;
+        margin-bottom: 15px;
+      }
+
+      p {
+        font-size: 14px;
+        color: #475569;
+        line-height: 1.6;
+      }
+    }
+  }
+}
+

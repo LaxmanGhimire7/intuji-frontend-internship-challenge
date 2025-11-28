@@ -19,45 +19,42 @@ $color: black;
   background-color: $background-color;
 }
 
-
-
 header {
-  background-image: url('../assets/image/bgc.png');
+  background-image: url("../assets/image/bgc.png");
   background-size: cover;
   background-position: center;
-  // overflow: hidden;
-  // height: fit-content;
+  height: 720px;
   .navbar {
     @include flexCenter(space-between, center);
     padding: 50px;
     color: black;
     padding-top: 25px;
 
-    .logo{
+    .logo {
       font-weight: 700;
+      padding-left: 60px;
     }
 
     .nav-links {
-      @include flexCenter(center, center, 60px);
+      @include flexCenter(center, center, 40px);
       list-style: none;
       a {
-         @include flexCenter();
+        @include flexCenter();
         text-decoration: none;
         color: $color;
         transition: 0.1s;
-   
+
         &:active {
           scale: 0.9;
         }
         i {
           font-size: 22px;
         }
-    }
+      }
     }
 
     .nav-buttons {
       padding: 10px;
-      margin-right: 20px;
 
       a {
         @include flexCenter(center, center, 0);
@@ -66,6 +63,9 @@ header {
         display: inline-flex;
         text-decoration: none;
         color: $color;
+        margin-right: 20px;
+        font-size: 13px;
+        font-weight: 500;
 
         &:active {
           scale: 0.9;

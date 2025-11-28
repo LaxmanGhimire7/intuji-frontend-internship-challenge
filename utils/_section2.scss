@@ -1,0 +1,27 @@
+
+@use "./navbar" as navbar;
+
+.view2{
+background-color: rgb(245, 246, 248);
+height: 200px;
+width: 100%;
+
+
+p{
+    padding: 20px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.view2-logos{
+    @include flexCenter(center, center, 60px )
+}
+
+.view2-logos img{
+    height: 20px;
+    margin-top: 20px;
+}
+
+}
+
+
