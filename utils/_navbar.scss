@@ -1,0 +1,87 @@
+$color: black;
+
+@mixin flexCenter(
+  $justify-content: center,
+  $align-items: center,
+  $gap: 0,
+  $direction: row
+) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  gap: $gap;
+  flex-direction: $direction;
+}
+
+@mixin button($padding: 20px 30px, $background-color) {
+  padding: $padding;
+  color: white;
+  background-color: $background-color;
+}
+
+
+
+header {
+  background-image: url('../assets/image/bgc.png');
+  background-size: cover;
+  background-position: center;
+  // overflow: hidden;
+  // height: fit-content;
+  .navbar {
+    @include flexCenter(space-between, center);
+    padding: 50px;
+    color: black;
+    padding-top: 25px;
+
+    .logo{
+      font-weight: 700;
+    }
+
+    .nav-links {
+      @include flexCenter(center, center, 60px);
+      list-style: none;
+      a {
+         @include flexCenter();
+        text-decoration: none;
+        color: $color;
+        transition: 0.1s;
+   
+        &:active {
+          scale: 0.9;
+        }
+        i {
+          font-size: 22px;
+        }
+    }
+    }
+
+    .nav-buttons {
+      padding: 10px;
+      margin-right: 20px;
+
+      a {
+        @include flexCenter(center, center, 0);
+        padding: 10px 15px;
+        border-radius: 8px;
+        display: inline-flex;
+        text-decoration: none;
+        color: $color;
+
+        &:active {
+          scale: 0.9;
+        }
+      }
+
+      button {
+        @include button(12px 20px, blue);
+        border-radius: 5px;
+        cursor: pointer;
+        border: none;
+
+        &:active {
+          scale: 0.95;
+        }
+      }
+    }
+  }
+}

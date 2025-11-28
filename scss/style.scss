@@ -1,10 +1,27 @@
+@font-face {
+    font-family: Manrope;
+    src: url(../assets/fonts/Manrope-Regular.ttf);
+}
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Manrope;
 }
 
 html,body{
     height: 100%;
     width: 100%;
 }
+
+
+
+
+
+@import '../utils/navbar';
+@import '../utils/section';
+
+
+
